@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom styling for card animations and transitions */
+.smooth-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+.gradient-brand {
+  background: linear-gradient(135deg, #4763be 0%, #34499d 100%);
+}
+
+.card-shadow {
+  box-shadow: 0 4px 20px -2px rgba(16, 24, 40, 0.05), 0 2px 8px -1px rgba(16, 24, 40, 0.03);
+}
+
+.card-shadow-hover:hover {
+  box-shadow: 0 12px 30px -4px rgba(16, 24, 40, 0.08), 0 4px 12px -2px rgba(16, 24, 40, 0.04);
+}
